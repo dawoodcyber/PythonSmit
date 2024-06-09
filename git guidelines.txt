@@ -1,0 +1,18 @@
+git config --global user.name "dawoodcyber" 
+git config --global usr.email "dawood@gmail.com"
+check in web credintials
+
+git status (to check update)
+
+git add . (to call all untracked files) or
+git add class\ 3.txt
+
+(to commit)
+git commit -m "class 3 work"
+
+(to push the code finally)
+git push -u origin main
+
+for version controls
+
+git log
