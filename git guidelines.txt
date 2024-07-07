@@ -16,3 +16,78 @@ git push -u origin main
 for version controls
 
 git log
+
+
+	#GITHUB (VERSION CONTROL SYSTEM)#
+
+-Team work (using branch(development branch, |dawood/dev|)--> main/master)
+-Code versioning
+
+
+1. LOCAL CONFIGURATION SETUP & INITIALIZATION
+	-Search (Web Credentials) >> Windows Credentials >> remove unknown credentials if required
+	- Make sure github bash is installed
+	- Choose any directory where you want to create repo.
+	- Create a folder 
+	- Go to that folder and open GitBash in there
+	- Command >> git init (for initialization with .git hidden folder)
+	- Make sure you username and email configurationn
+	- command >> git config --global user.name "<git hub user name should be here>"
+	- command >> git config --global user.email "<your email of github>"
+	- To validate above cofig run following commands
+	- >> git config --global user.name
+	- >> git config --global user.email
+
+2. GIT CONNECTIVITY WITH REMOTE REPO
+	- Make sure you should have github account 
+	- If you don't have then create one!
+	- Login to your github account
+	- Click on '+' icon top right and then click on New Repository
+	- Fill the opened tab and give the following details.
+		i  - Repo name
+		ii - Provide description 
+		iii- Make sure repo is public
+	- After making sure click on create repository
+	-  Or create a new repository on command line
+	- >> echo "# reponame" >>  README.md (It'll create readme file)
+	- >> git init
+	- >> git status (to check changes in directory)
+	- >> git add README.md (to update the status)
+	- >> git add -A (to update all files)
+	- >> git add . (to update all files)
+	- >> git commit -m "first commit" (message -m)
+	- >> git branch -M main (remain main branch's name from master to main)
+	- >> git remote add origin https://repolink
+
+	- >> git push -u origin main (here you can give you branch name)
+	- >> login and authentication
+	- Push an existing repo from the command line
+	- >> git add .
+	- >> git commit -m "update"
+	- >> git push
+	
+3. BRANCHING
+	- Simulator (https://git-school.github.io/visualizing-git/)
+	- >> git branch -a (status no. of branches and on which branch you on)
+	- >> git checkout -b task/dawood(to make a new branch and also switched on to that)
+	- >> git branch -a (to see on which branch you are on)
+	- >> git status
+ 	- >> git add .
+	- >> git commit -m "dawood branch"
+	->> git push -u origin task/dawood
+
+	- On git remote you can create pull request merge with main branch
+
+
+4. CONFLICT RESOLVING
+   When remote is ahead of your local, run below command
+	- >> git pull (for getting things from remote to local)
+   Merge Conflict when there are changes in remote and local both
+	- >> git stash (to move things somwhere else temporarily)
+	- >> git merge
+	- >> git stash pop
+	- >> git add file.txt
+	- >> git commit -m "updated through merge"
+	- >> git push 
+
+	
